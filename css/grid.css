@@ -1,0 +1,150 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+	margin: 0px;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-right: 0px; /* column-space */
+}
+
+.grid{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding-top: 20px;
+	padding-left: 10px; /* grid-space to left */
+	padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+.clear-grid-pad-left{
+    padding-left: 0px !important;
+    
+}
+
+.push-right {
+	float: right;
+}
+
+/* Content Columns */
+
+.col-1-1 {
+	width: 100%;
+}
+.col-1-12{
+    width: 8.33%;
+}
+.col-2-12 {
+	width: 16.66%;
+}
+.col-3-12 {
+	width: 25%;
+}
+.col-4-12 {
+	width: 33.33%;
+}
+.col-5-12 {
+	width: 41.66%;
+}
+.col-6-12 {
+	width: 50%;
+}
+.col-7-12{
+    width: 58.33%;
+}
+
+.col-8-12 {
+	width: 66.66%;
+}
+.col-9-12 {
+   width: 75%; 
+}
+
+.col-10-12 {
+    width: 83.33%;
+
+}
+.col-11-12{
+    width: 91.66%;
+}
+
+
+
+/* Pushing blocks */
+
+.push-1-12 {
+	margin-left: 8.33%;
+}
+
+.push-2-12 {
+	margin-left: 16.66%;
+}
+.push-3-12 {
+	margin-left: 25%;
+}
+
+.push-4-12 {
+	margin-left: 33.33%;
+}
+
+.push-5-12 {
+	margin-left: 41.66%;
+}
+
+.push-6-12 {
+	margin-left: 50%;
+}
+
+.push-7-12 {
+	margin-left: 58.33%;
+}
+
+.push-8-12 {
+	margin-left: 66.66%;
+}
+
+.push-9-12 {
+	margin-left: 75%;
+}
+
+.push-10-12 {
+	margin-left: 83.33%;
+}
+
+.push-11-12 {
+	margin-left: 91.66%;
+}
+
+
+
+
+
+/* Computer size */
+@media screen and (min-width: 990px){
+    
+    .hide-on-computer{
+        display: none !important;
+		width: 0;
+		height: 0;
+    }   
+}
+
+
+
+
